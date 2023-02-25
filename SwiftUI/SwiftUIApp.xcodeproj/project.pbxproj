@@ -20,11 +20,11 @@
 
 /* Begin PBXFileReference section */
 		E763AF0129146CDE001715F6 /* PlayingDayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingDayView.swift; sourceTree = "<group>"; };
-		E7C0BDEA2913172E00000EB2 /* swift-nefub-api */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "swift-nefub-api"; path = "../swift-nefub-api"; sourceTree = "<group>"; };
+		E7AE2A1C29AAAC1E0004C474 /* swift-nefub-api */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "swift-nefub-api"; path = "../../swift-nefub-api"; sourceTree = "<group>"; };
 		E7C0BDF32913270D00000EB2 /* LocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationView.swift; sourceTree = "<group>"; };
 		E7C0BDF52913274F00000EB2 /* Previews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Previews.swift; sourceTree = "<group>"; };
 		E7ECAA48291F164000B560F1 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
-		E7EF20A52913157600090B5A /* SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7EF20A52913157600090B5A /* SwiftUIApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7EF20A82913157700090B5A /* NefubAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NefubAppApp.swift; sourceTree = "<group>"; };
 		E7EF20AA2913157700090B5A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E7EF20AC2913157800090B5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -64,7 +64,7 @@
 		E7EF20A62913157600090B5A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E7EF20A52913157600090B5A /* SwiftUI.app */,
+				E7EF20A52913157600090B5A /* SwiftUIApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -96,7 +96,7 @@
 		E7EF20B92913164100090B5A /* Packages */ = {
 			isa = PBXGroup;
 			children = (
-				E7C0BDEA2913172E00000EB2 /* swift-nefub-api */,
+				E7AE2A1C29AAAC1E0004C474 /* swift-nefub-api */,
 			);
 			name = Packages;
 			sourceTree = "<group>";
@@ -104,9 +104,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E7EF20A42913157600090B5A /* SwiftUI */ = {
+		E7EF20A42913157600090B5A /* SwiftUIApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E7EF20B42913157800090B5A /* Build configuration list for PBXNativeTarget "SwiftUI" */;
+			buildConfigurationList = E7EF20B42913157800090B5A /* Build configuration list for PBXNativeTarget "SwiftUIApp" */;
 			buildPhases = (
 				E7EF20A12913157600090B5A /* Sources */,
 				E7EF20A22913157600090B5A /* Frameworks */,
@@ -118,12 +118,12 @@
 				E7C0BDF02913176600000EB2 /* PBXTargetDependency */,
 				E7C0BDF22913176600000EB2 /* PBXTargetDependency */,
 			);
-			name = SwiftUI;
+			name = SwiftUIApp;
 			packageProductDependencies = (
 				E7C0BDED2913174700000EB2 /* NefubApi */,
 			);
 			productName = NefubApp;
-			productReference = E7EF20A52913157600090B5A /* SwiftUI.app */;
+			productReference = E7EF20A52913157600090B5A /* SwiftUIApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -141,7 +141,7 @@
 					};
 				};
 			};
-			buildConfigurationList = E7EF20A02913157600090B5A /* Build configuration list for PBXProject "SwiftUI" */;
+			buildConfigurationList = E7EF20A02913157600090B5A /* Build configuration list for PBXProject "SwiftUIApp" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -154,7 +154,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E7EF20A42913157600090B5A /* SwiftUI */,
+				E7EF20A42913157600090B5A /* SwiftUIApp */,
 			);
 		};
 /* End PBXProject section */
@@ -387,7 +387,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E7EF20A02913157600090B5A /* Build configuration list for PBXProject "SwiftUI" */ = {
+		E7EF20A02913157600090B5A /* Build configuration list for PBXProject "SwiftUIApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E7EF20B22913157800090B5A /* Debug */,
@@ -396,7 +396,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E7EF20B42913157800090B5A /* Build configuration list for PBXNativeTarget "SwiftUI" */ = {
+		E7EF20B42913157800090B5A /* Build configuration list for PBXNativeTarget "SwiftUIApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E7EF20B52913157800090B5A /* Debug */,

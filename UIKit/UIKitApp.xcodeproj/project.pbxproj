@@ -18,7 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		E7C0BE002913511200000EB2 /* UIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7C0BE002913511200000EB2 /* UIKitApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIKitApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7C0BE032913511200000EB2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E7C0BE052913511200000EB2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		E7C0BE072913511200000EB2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,7 +56,7 @@
 		E7C0BE012913511200000EB2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E7C0BE002913511200000EB2 /* UIKit.app */,
+				E7C0BE002913511200000EB2 /* UIKitApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,9 +95,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E7C0BDFF2913511200000EB2 /* UIKit */ = {
+		E7C0BDFF2913511200000EB2 /* UIKitApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E7C0BE142913511400000EB2 /* Build configuration list for PBXNativeTarget "UIKit" */;
+			buildConfigurationList = E7C0BE142913511400000EB2 /* Build configuration list for PBXNativeTarget "UIKitApp" */;
 			buildPhases = (
 				E7C0BDFC2913511200000EB2 /* Sources */,
 				E7C0BDFD2913511200000EB2 /* Frameworks */,
@@ -107,12 +107,12 @@
 			);
 			dependencies = (
 			);
-			name = UIKit;
+			name = UIKitApp;
 			packageProductDependencies = (
 				E7C0BE1D291351ED00000EB2 /* NefubApi */,
 			);
 			productName = NefubUIKit;
-			productReference = E7C0BE002913511200000EB2 /* UIKit.app */;
+			productReference = E7C0BE002913511200000EB2 /* UIKitApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -130,7 +130,7 @@
 					};
 				};
 			};
-			buildConfigurationList = E7C0BDFB2913511200000EB2 /* Build configuration list for PBXProject "UIKit" */;
+			buildConfigurationList = E7C0BDFB2913511200000EB2 /* Build configuration list for PBXProject "UIKitApp" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -143,7 +143,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E7C0BDFF2913511200000EB2 /* UIKit */,
+				E7C0BDFF2913511200000EB2 /* UIKitApp */,
 			);
 		};
 /* End PBXProject section */
@@ -376,7 +376,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E7C0BDFB2913511200000EB2 /* Build configuration list for PBXProject "UIKit" */ = {
+		E7C0BDFB2913511200000EB2 /* Build configuration list for PBXProject "UIKitApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E7C0BE122913511400000EB2 /* Debug */,
@@ -385,7 +385,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E7C0BE142913511400000EB2 /* Build configuration list for PBXNativeTarget "UIKit" */ = {
+		E7C0BE142913511400000EB2 /* Build configuration list for PBXNativeTarget "UIKitApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E7C0BE152913511400000EB2 /* Debug */,

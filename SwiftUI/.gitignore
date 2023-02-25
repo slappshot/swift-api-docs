@@ -1,6 +1,6 @@
 .DS_Store
 xcuserdata/
-NefubApp.xcodeproj/project.xcworkspace/
-NefubApp.xcodeproj/xcshareddata/
-NefubApp.xcodeproj/xcuserdata/
+SwiftUIApp.xcodeproj/project.xcworkspace
+SwiftUIApp.xcodeproj/xcshareddata
+SwiftUIApp.xcodeproj/xcuserdata
 
