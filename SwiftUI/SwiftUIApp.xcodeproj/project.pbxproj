@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		E763AF0229146CDE001715F6 /* PlayingDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E763AF0129146CDE001715F6 /* PlayingDayView.swift */; };
-		E7C0BDEE2913174700000EB2 /* NefubApi in Frameworks */ = {isa = PBXBuildFile; productRef = E7C0BDED2913174700000EB2 /* NefubApi */; };
 		E7C0BDF42913270D00000EB2 /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C0BDF32913270D00000EB2 /* LocationView.swift */; };
 		E7C0BDF62913274F00000EB2 /* Previews.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C0BDF52913274F00000EB2 /* Previews.swift */; };
 		E7ECAA49291F164000B560F1 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7ECAA48291F164000B560F1 /* GameView.swift */; };
@@ -20,7 +19,7 @@
 
 /* Begin PBXFileReference section */
 		E763AF0129146CDE001715F6 /* PlayingDayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingDayView.swift; sourceTree = "<group>"; };
-		E7AE2A1C29AAAC1E0004C474 /* swift-nefub-api */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "swift-nefub-api"; path = "../../swift-nefub-api"; sourceTree = "<group>"; };
+		E7AE2A1D29AAB13C0004C474 /* swift-nefub-api */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "swift-nefub-api"; path = "../../swift-nefub-api"; sourceTree = "<group>"; };
 		E7C0BDF32913270D00000EB2 /* LocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationView.swift; sourceTree = "<group>"; };
 		E7C0BDF52913274F00000EB2 /* Previews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Previews.swift; sourceTree = "<group>"; };
 		E7ECAA48291F164000B560F1 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
@@ -37,7 +36,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E7C0BDEE2913174700000EB2 /* NefubApi in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,7 +94,7 @@
 		E7EF20B92913164100090B5A /* Packages */ = {
 			isa = PBXGroup;
 			children = (
-				E7AE2A1C29AAAC1E0004C474 /* swift-nefub-api */,
+				E7AE2A1D29AAB13C0004C474 /* swift-nefub-api */,
 			);
 			name = Packages;
 			sourceTree = "<group>";
@@ -120,7 +118,6 @@
 			);
 			name = SwiftUIApp;
 			packageProductDependencies = (
-				E7C0BDED2913174700000EB2 /* NefubApi */,
 			);
 			productName = NefubApp;
 			productReference = E7EF20A52913157600090B5A /* SwiftUIApp.app */;
@@ -408,10 +405,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		E7C0BDED2913174700000EB2 /* NefubApi */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = NefubApi;
-		};
 		E7C0BDEF2913176600000EB2 /* Localize_Swift */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Localize_Swift;

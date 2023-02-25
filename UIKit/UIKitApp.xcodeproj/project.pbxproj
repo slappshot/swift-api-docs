@@ -7,17 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E7AE2A2029AAB3960004C474 /* NefubApi in Frameworks */ = {isa = PBXBuildFile; productRef = E7AE2A1F29AAB3960004C474 /* NefubApi */; };
 		E7C0BE042913511200000EB2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C0BE032913511200000EB2 /* AppDelegate.swift */; };
 		E7C0BE062913511200000EB2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C0BE052913511200000EB2 /* SceneDelegate.swift */; };
 		E7C0BE082913511200000EB2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C0BE072913511200000EB2 /* ViewController.swift */; };
 		E7C0BE0B2913511200000EB2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7C0BE092913511200000EB2 /* Main.storyboard */; };
 		E7C0BE0D2913511400000EB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7C0BE0C2913511400000EB2 /* Assets.xcassets */; };
 		E7C0BE102913511400000EB2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7C0BE0E2913511400000EB2 /* LaunchScreen.storyboard */; };
-		E7C0BE1E291351ED00000EB2 /* NefubApi in Frameworks */ = {isa = PBXBuildFile; productRef = E7C0BE1D291351ED00000EB2 /* NefubApi */; };
 		E7C0BE20291354F700000EB2 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C0BE1F291354F700000EB2 /* LocationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E7AE2A1E29AAB1FF0004C474 /* swift-nefub-api */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "swift-nefub-api"; path = "../../swift-nefub-api"; sourceTree = "<group>"; };
 		E7C0BE002913511200000EB2 /* UIKitApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIKitApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7C0BE032913511200000EB2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E7C0BE052913511200000EB2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -27,7 +28,6 @@
 		E7C0BE0F2913511400000EB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E7C0BE112913511400000EB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E7C0BE172913518A00000EB2 /* NefubUIKit.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NefubUIKit.entitlements; sourceTree = "<group>"; };
-		E7C0BE19291351A500000EB2 /* swift-nefub-api */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "swift-nefub-api"; path = "../../swift-nefub-api"; sourceTree = "<group>"; };
 		E7C0BE1F291354F700000EB2 /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -36,7 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E7C0BE1E291351ED00000EB2 /* NefubApi in Frameworks */,
+				E7AE2A2029AAB3960004C474 /* NefubApi in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,7 +80,7 @@
 		E7C0BE18291351A500000EB2 /* Packages */ = {
 			isa = PBXGroup;
 			children = (
-				E7C0BE19291351A500000EB2 /* swift-nefub-api */,
+				E7AE2A1E29AAB1FF0004C474 /* swift-nefub-api */,
 			);
 			name = Packages;
 			sourceTree = "<group>";
@@ -109,7 +109,7 @@
 			);
 			name = UIKitApp;
 			packageProductDependencies = (
-				E7C0BE1D291351ED00000EB2 /* NefubApi */,
+				E7AE2A1F29AAB3960004C474 /* NefubApi */,
 			);
 			productName = NefubUIKit;
 			productReference = E7C0BE002913511200000EB2 /* UIKitApp.app */;
@@ -397,7 +397,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		E7C0BE1D291351ED00000EB2 /* NefubApi */ = {
+		E7AE2A1F29AAB3960004C474 /* NefubApi */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = NefubApi;
 		};
