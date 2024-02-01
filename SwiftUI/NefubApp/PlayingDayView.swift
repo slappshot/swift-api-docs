@@ -19,7 +19,6 @@ struct PlayingDayView: View {
                 NavigationLink(destination: GameView(game: game)) {
                     HStack {
                         Text(game.time ?? "TBA")
-                            .font(.subheadline)
                             .foregroundColor(.secondary)
                         TeamImage(game.home!, size: 25)
                         Text(game.home?.name ?? "Home")
@@ -27,6 +26,8 @@ struct PlayingDayView: View {
                         Text(game.away?.name ?? "Away")
                         TeamImage(game.away!, size: 25)
                     }
+                    .font(.subheadline)
+                    .lineLimit(1)
                 }
             }
         }

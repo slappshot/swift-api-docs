@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:/Users/jaspermutsaerts/Developer/personal/Nefub/NefubApiExamples/SwiftUI/SwiftUIApp.xcodeproj">
+      location = "self:">
    </FileRef>
 </Workspace>

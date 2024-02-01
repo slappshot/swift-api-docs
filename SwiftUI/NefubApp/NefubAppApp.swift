@@ -11,7 +11,7 @@ import SwiftUI
 @main
 struct NefubAppApp: App {
     init() {
-        NefubApi.configuration = NefubApiConfig(appVersion: "1.0.0", sdk: "1.0.0", deviceId: "xxx", osVersion: "12.0.0", personId: nil)
+        NefubApi.configuration = .init(appVersion: "1.0.0", sdk: "1.0.0", deviceId: "xxx", osVersion: "12.0.0", personId: nil)
     }
 
     var body: some Scene {
