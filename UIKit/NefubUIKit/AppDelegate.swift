@@ -13,7 +13,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
 
-        NefubApi.configuration = NefubApiConfig(appVersion: "1.0.0", sdk: "1.0.0", deviceId: "1.0.0", osVersion: "1.0.0", personId: nil)
+        NefubApi.configuration = .init(appVersion: "1.0.0", sdk: "1.0.0", deviceId: "1.0.0", osVersion: "1.0.0", personId: nil)
 
         return true
     }
