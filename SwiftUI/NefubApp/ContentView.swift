@@ -10,42 +10,52 @@ import SwiftUI
 
 struct ContentView: View {
     @ObservedObject var model = LocationsModel()
-
+    
+    var isLoading: Bool {
+        model.locations == nil
+    }
+    
+    var locations: [Location] {
+        model.locations ?? []
+    }
+    
     var body: some View {
         NavigationView {
-            List {
-                if model.locations.isEmpty {
-                    Text("No locations found")
-                } else {
-                    ForEach(model.locations, id: \.id) { location in
+            if isLoading {
+                ProgressView("Loading...")
+            } else if (locations.isEmpty) {
+                Text("No locations found")
+            }
+            else {
+                List {
+                    ForEach(locations, id: \.id) { location in
                         NavigationLink(destination: LocationView(location: location).macOsNavigationView()) {
                             VStack (alignment: .leading) {
                                 Text(location.name ?? "")
+                                    .lineLimit(1)
                                 Text(location.id.description)
                                     .font(.subheadline)
                                     .foregroundColor(.secondary)
                             }
                         }
+                        
                     }
                 }
             }
-            .frame(minWidth: 200)
-            .onAppear(perform: model.load)
-            .listRowInsets(EdgeInsets(top: 0, leading: 0, bottom: 30, trailing: 0))
         }
+        .onAppear(perform: model.load)
+        .listRowInsets(EdgeInsets(top: 0, leading: 0, bottom: 30, trailing: 0))
     }
 }
 
 
-
-
 class LocationsModel: ObservableObject {
-    @Published var locations: [Location] = []
-
+    @Published var locations: [Location]? = nil
+    
     private var api: NefubApi {
         NefubApi()
     }
-
+    
     func load() {
         api.playingDays(seasonId: 2022) { playingDays in
             var locations: [Location] = []
