@@ -14,7 +14,29 @@ class ViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let spinner = UIActivityIndicatorView()
+        spinner.startAnimating()
+        view.addSubview(spinner)
+    
+    
+        let noResultsLabel = UILabel()
+        noResultsLabel.text = "No locations found"
+        view.addSubview(noResultsLabel)
+        noResultsLabel.isHidden = true
+    
+        spinner.translatesAutoresizingMaskIntoConstraints = false
+        noResultsLabel.translatesAutoresizingMaskIntoConstraints = false
+        
+        NSLayoutConstraint.activate([
+            spinner.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            spinner.centerYAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 150),
 
+            noResultsLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            noResultsLabel.centerYAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 150),
+       ])
+        
+        
         api.playingDays(seasonId: 2022) { playingDays in
             var locations: [Location] = []
             playingDays
@@ -27,7 +49,10 @@ class ViewController: UITableViewController {
             self.locations = locations.sorted {
                 $0.name! < $1.name!
             }
+            spinner.stopAnimating()
+            noResultsLabel.isHidden = !self.locations.isEmpty
             self.tableView.reloadData()
+            
         }
     }
 
