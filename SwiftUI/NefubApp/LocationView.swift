@@ -9,14 +9,14 @@ import NefubApi
 import SwiftUI
 
 struct LocationView: View {
-    var size: CGFloat = 300
+    var imageSize = 300
     var location: Location
     @State var image: Image?
     @ObservedObject var model = LocationViewModel()
 
     var body: some View {
         VStack {
-            LocationImage(location.id)
+            LocationImage(location.id, size: imageSize)
             Spacer()
             List(model.playingDays) { playingDay in
                 NavigationLink(destination: PlayingDayView(playingDay: playingDay)) {

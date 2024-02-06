@@ -19,24 +19,23 @@ struct GameView: View {
                     Text(event.time ?? "-")
                         .font(.subheadline)
                         .foregroundColor(.secondary)
-                    
+
                     VStack(alignment: .leading) {
                         HStack {
-                            if (event.hasGoalType) {
+                            if event.hasGoalType {
                                 Image(systemName: "cricket.ball")
                             }
                             if let description = event.description {
                                 Text(description)
                                     .font(.subheadline)
                             }
-                            
 
                         }
                         if let code = event.code {
                             Text(code)
                                 .foregroundColor(.secondary)
                         }
-                        
+
                     }
                 }
             }
@@ -56,8 +55,6 @@ class GameViewModel: ObservableObject {
 
     @Published var result: Result?
     @Published var events = [GameEvent]()
-
-
 
     func load(_ game: Game) {
         api.game(game.id) { game in

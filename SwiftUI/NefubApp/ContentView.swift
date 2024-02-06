@@ -10,27 +10,26 @@ import SwiftUI
 
 struct ContentView: View {
     @ObservedObject var model = LocationsModel()
-    
+
     var isLoading: Bool {
         model.locations == nil
     }
-    
+
     var locations: [Location] {
         model.locations ?? []
     }
-    
+
     var body: some View {
         NavigationView {
             if isLoading {
                 ProgressView("Loading...")
-            } else if (locations.isEmpty) {
+            } else if locations.isEmpty {
                 Text("No locations found")
-            }
-            else {
+            } else {
                 List {
                     ForEach(locations, id: \.id) { location in
                         NavigationLink(destination: LocationView(location: location).macOsNavigationView()) {
-                            VStack (alignment: .leading) {
+                            VStack(alignment: .leading) {
                                 Text(location.name ?? "")
                                     .lineLimit(1)
                                 Text(location.id.description)
@@ -38,7 +37,7 @@ struct ContentView: View {
                                     .foregroundColor(.secondary)
                             }
                         }
-                        
+
                     }
                 }
             }
@@ -48,14 +47,13 @@ struct ContentView: View {
     }
 }
 
-
 class LocationsModel: ObservableObject {
-    @Published var locations: [Location]? = nil
-    
+    @Published var locations: [Location]?
+
     private var api: NefubApi {
         NefubApi()
     }
-    
+
     func load() {
         api.playingDays(seasonId: 2022) { playingDays in
             var locations: [Location] = []
@@ -72,7 +70,6 @@ class LocationsModel: ObservableObject {
         }
     }
 }
-
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

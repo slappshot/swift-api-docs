@@ -49,7 +49,6 @@ extension Team {
     }
 }
 
-
 extension Array where Element == Location {
     static var preview: [Location] {
         [
